@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4284E7941BB97A0C006552DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7931BB97A0C006552DD /* main.m */; };
+		4284E7971BB97A0C006552DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7961BB97A0C006552DD /* AppDelegate.m */; };
+		4284E79F1BB97A0C006552DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4284E79E1BB97A0C006552DD /* Assets.xcassets */; };
+		4284E7A21BB97A0C006552DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4284E7A01BB97A0C006552DD /* LaunchScreen.storyboard */; };
+		4284E7AD1BB97A0C006552DD /* FaceTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7AC1BB97A0C006552DD /* FaceTestDemoTests.m */; };
+		4284E7B81BB97A0C006552DD /* FaceTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7B71BB97A0C006552DD /* FaceTestDemoUITests.m */; };
+		4284E7E21BB97FCA006552DD /* CCAutoTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7DD1BB97FCA006552DD /* CCAutoTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		4284E7E31BB97FCA006552DD /* CCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7DF1BB97FCA006552DD /* CCTabBar.m */; settings = {ASSET_TAGS = (); }; };
+		4284E7E41BB97FCA006552DD /* CCTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7E11BB97FCA006552DD /* CCTabBarButton.m */; settings = {ASSET_TAGS = (); }; };
+		4284E7E81BB980DB006552DD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7E71BB980DB006552DD /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4284E7EB1BB980EF006552DD /* SDKsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7EA1BB980EF006552DD /* SDKsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4284E7EE1BB98125006552DD /* COntactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7ED1BB98125006552DD /* COntactViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4284E80D1BB98DE6006552DD /* FaceppAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7F11BB98DE6006552DD /* FaceppAPI.m */; settings = {ASSET_TAGS = (); }; };
+		4284E80E1BB98DE6006552DD /* FaceppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7F41BB98DE6006552DD /* FaceppClient.m */; settings = {ASSET_TAGS = (); }; };
+		4284E80F1BB98DE6006552DD /* FaceppDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7F61BB98DE6006552DD /* FaceppDetection.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8101BB98DE6006552DD /* FaceppFaceset.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7F81BB98DE6006552DD /* FaceppFaceset.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8111BB98DE6006552DD /* FaceppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7FA1BB98DE6006552DD /* FaceppGroup.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8121BB98DE6006552DD /* FaceppGrouping.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7FC1BB98DE6006552DD /* FaceppGrouping.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8131BB98DE6006552DD /* FaceppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E7FE1BB98DE6006552DD /* FaceppInfo.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8141BB98DE6006552DD /* FaceppPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E8001BB98DE6006552DD /* FaceppPerson.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8151BB98DE6006552DD /* FaceppRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E8021BB98DE6006552DD /* FaceppRecognition.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8161BB98DE6006552DD /* FaceppTrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E8041BB98DE6006552DD /* FaceppTrainer.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8171BB98DE6006552DD /* FaceppError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E8071BB98DE6006552DD /* FaceppError.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8181BB98DE6006552DD /* FaceppResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E8091BB98DE6006552DD /* FaceppResult.m */; settings = {ASSET_TAGS = (); }; };
+		4284E8191BB98DE6006552DD /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284E80C1BB98DE6006552DD /* UIView+AutoLayout.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4284E7A91BB97A0C006552DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4284E7871BB97A0C006552DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4284E78E1BB97A0C006552DD;
+			remoteInfo = FaceTestDemo;
+		};
+		4284E7B41BB97A0C006552DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4284E7871BB97A0C006552DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4284E78E1BB97A0C006552DD;
+			remoteInfo = FaceTestDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4284E78F1BB97A0C006552DD /* FaceTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4284E7931BB97A0C006552DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4284E7951BB97A0C006552DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4284E7961BB97A0C006552DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4284E79E1BB97A0C006552DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4284E7A11BB97A0C006552DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4284E7A31BB97A0C006552DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4284E7A81BB97A0C006552DD /* FaceTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4284E7AC1BB97A0C006552DD /* FaceTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceTestDemoTests.m; sourceTree = "<group>"; };
+		4284E7AE1BB97A0C006552DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4284E7B31BB97A0C006552DD /* FaceTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4284E7B71BB97A0C006552DD /* FaceTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceTestDemoUITests.m; sourceTree = "<group>"; };
+		4284E7B91BB97A0C006552DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4284E7DC1BB97FCA006552DD /* CCAutoTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAutoTabBarController.h; sourceTree = "<group>"; };
+		4284E7DD1BB97FCA006552DD /* CCAutoTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAutoTabBarController.m; sourceTree = "<group>"; };
+		4284E7DE1BB97FCA006552DD /* CCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBar.h; sourceTree = "<group>"; };
+		4284E7DF1BB97FCA006552DD /* CCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTabBar.m; sourceTree = "<group>"; };
+		4284E7E01BB97FCA006552DD /* CCTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTabBarButton.h; sourceTree = "<group>"; };
+		4284E7E11BB97FCA006552DD /* CCTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTabBarButton.m; sourceTree = "<group>"; };
+		4284E7E61BB980DB006552DD /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4284E7E71BB980DB006552DD /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4284E7E91BB980EF006552DD /* SDKsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDKsViewController.h; sourceTree = "<group>"; };
+		4284E7EA1BB980EF006552DD /* SDKsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDKsViewController.m; sourceTree = "<group>"; };
+		4284E7EC1BB98125006552DD /* COntactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COntactViewController.h; sourceTree = "<group>"; };
+		4284E7ED1BB98125006552DD /* COntactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COntactViewController.m; sourceTree = "<group>"; };
+		4284E7F01BB98DE6006552DD /* FaceppAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppAPI.h; sourceTree = "<group>"; };
+		4284E7F11BB98DE6006552DD /* FaceppAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppAPI.m; sourceTree = "<group>"; };
+		4284E7F31BB98DE6006552DD /* FaceppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppClient.h; sourceTree = "<group>"; };
+		4284E7F41BB98DE6006552DD /* FaceppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppClient.m; sourceTree = "<group>"; };
+		4284E7F51BB98DE6006552DD /* FaceppDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppDetection.h; sourceTree = "<group>"; };
+		4284E7F61BB98DE6006552DD /* FaceppDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppDetection.m; sourceTree = "<group>"; };
+		4284E7F71BB98DE6006552DD /* FaceppFaceset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppFaceset.h; sourceTree = "<group>"; };
+		4284E7F81BB98DE6006552DD /* FaceppFaceset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppFaceset.m; sourceTree = "<group>"; };
+		4284E7F91BB98DE6006552DD /* FaceppGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppGroup.h; sourceTree = "<group>"; };
+		4284E7FA1BB98DE6006552DD /* FaceppGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppGroup.m; sourceTree = "<group>"; };
+		4284E7FB1BB98DE6006552DD /* FaceppGrouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppGrouping.h; sourceTree = "<group>"; };
+		4284E7FC1BB98DE6006552DD /* FaceppGrouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppGrouping.m; sourceTree = "<group>"; };
+		4284E7FD1BB98DE6006552DD /* FaceppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppInfo.h; sourceTree = "<group>"; };
+		4284E7FE1BB98DE6006552DD /* FaceppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppInfo.m; sourceTree = "<group>"; };
+		4284E7FF1BB98DE6006552DD /* FaceppPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppPerson.h; sourceTree = "<group>"; };
+		4284E8001BB98DE6006552DD /* FaceppPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppPerson.m; sourceTree = "<group>"; };
+		4284E8011BB98DE6006552DD /* FaceppRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppRecognition.h; sourceTree = "<group>"; };
+		4284E8021BB98DE6006552DD /* FaceppRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppRecognition.m; sourceTree = "<group>"; };
+		4284E8031BB98DE6006552DD /* FaceppTrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppTrainer.h; sourceTree = "<group>"; };
+		4284E8041BB98DE6006552DD /* FaceppTrainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppTrainer.m; sourceTree = "<group>"; };
+		4284E8061BB98DE6006552DD /* FaceppError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppError.h; sourceTree = "<group>"; };
+		4284E8071BB98DE6006552DD /* FaceppError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppError.m; sourceTree = "<group>"; };
+		4284E8081BB98DE6006552DD /* FaceppResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppResult.h; sourceTree = "<group>"; };
+		4284E8091BB98DE6006552DD /* FaceppResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppResult.m; sourceTree = "<group>"; };
+		4284E80B1BB98DE6006552DD /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		4284E80C1BB98DE6006552DD /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4284E78C1BB97A0C006552DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4284E7A51BB97A0C006552DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4284E7B01BB97A0C006552DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4284E7861BB97A0C006552DD = {
+			isa = PBXGroup;
+			children = (
+				4284E7911BB97A0C006552DD /* FaceTestDemo */,
+				4284E7AB1BB97A0C006552DD /* FaceTestDemoTests */,
+				4284E7B61BB97A0C006552DD /* FaceTestDemoUITests */,
+				4284E7901BB97A0C006552DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4284E7901BB97A0C006552DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4284E78F1BB97A0C006552DD /* FaceTestDemo.app */,
+				4284E7A81BB97A0C006552DD /* FaceTestDemoTests.xctest */,
+				4284E7B31BB97A0C006552DD /* FaceTestDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4284E7911BB97A0C006552DD /* FaceTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7EF1BB98DE6006552DD /* FaceppSDK_ARC */,
+				4284E7DB1BB97FC9006552DD /* CCAutoTabBar */,
+				4284E7E51BB980BF006552DD /* Module */,
+				4284E7951BB97A0C006552DD /* AppDelegate.h */,
+				4284E7961BB97A0C006552DD /* AppDelegate.m */,
+				4284E79E1BB97A0C006552DD /* Assets.xcassets */,
+				4284E7A01BB97A0C006552DD /* LaunchScreen.storyboard */,
+				4284E7A31BB97A0C006552DD /* Info.plist */,
+				4284E7921BB97A0C006552DD /* Supporting Files */,
+			);
+			path = FaceTestDemo;
+			sourceTree = "<group>";
+		};
+		4284E7921BB97A0C006552DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7931BB97A0C006552DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4284E7AB1BB97A0C006552DD /* FaceTestDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7AC1BB97A0C006552DD /* FaceTestDemoTests.m */,
+				4284E7AE1BB97A0C006552DD /* Info.plist */,
+			);
+			path = FaceTestDemoTests;
+			sourceTree = "<group>";
+		};
+		4284E7B61BB97A0C006552DD /* FaceTestDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7B71BB97A0C006552DD /* FaceTestDemoUITests.m */,
+				4284E7B91BB97A0C006552DD /* Info.plist */,
+			);
+			path = FaceTestDemoUITests;
+			sourceTree = "<group>";
+		};
+		4284E7DB1BB97FC9006552DD /* CCAutoTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7DC1BB97FCA006552DD /* CCAutoTabBarController.h */,
+				4284E7DD1BB97FCA006552DD /* CCAutoTabBarController.m */,
+				4284E7DE1BB97FCA006552DD /* CCTabBar.h */,
+				4284E7DF1BB97FCA006552DD /* CCTabBar.m */,
+				4284E7E01BB97FCA006552DD /* CCTabBarButton.h */,
+				4284E7E11BB97FCA006552DD /* CCTabBarButton.m */,
+			);
+			path = CCAutoTabBar;
+			sourceTree = "<group>";
+		};
+		4284E7E51BB980BF006552DD /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7E61BB980DB006552DD /* MainViewController.h */,
+				4284E7E71BB980DB006552DD /* MainViewController.m */,
+				4284E7E91BB980EF006552DD /* SDKsViewController.h */,
+				4284E7EA1BB980EF006552DD /* SDKsViewController.m */,
+				4284E7EC1BB98125006552DD /* COntactViewController.h */,
+				4284E7ED1BB98125006552DD /* COntactViewController.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4284E7EF1BB98DE6006552DD /* FaceppSDK_ARC */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7F01BB98DE6006552DD /* FaceppAPI.h */,
+				4284E7F11BB98DE6006552DD /* FaceppAPI.m */,
+				4284E7F21BB98DE6006552DD /* FaceppAPISource */,
+				4284E8051BB98DE6006552DD /* FaceppResult */,
+				4284E80A1BB98DE6006552DD /* Source */,
+			);
+			path = FaceppSDK_ARC;
+			sourceTree = "<group>";
+		};
+		4284E7F21BB98DE6006552DD /* FaceppAPISource */ = {
+			isa = PBXGroup;
+			children = (
+				4284E7F31BB98DE6006552DD /* FaceppClient.h */,
+				4284E7F41BB98DE6006552DD /* FaceppClient.m */,
+				4284E7F51BB98DE6006552DD /* FaceppDetection.h */,
+				4284E7F61BB98DE6006552DD /* FaceppDetection.m */,
+				4284E7F71BB98DE6006552DD /* FaceppFaceset.h */,
+				4284E7F81BB98DE6006552DD /* FaceppFaceset.m */,
+				4284E7F91BB98DE6006552DD /* FaceppGroup.h */,
+				4284E7FA1BB98DE6006552DD /* FaceppGroup.m */,
+				4284E7FB1BB98DE6006552DD /* FaceppGrouping.h */,
+				4284E7FC1BB98DE6006552DD /* FaceppGrouping.m */,
+				4284E7FD1BB98DE6006552DD /* FaceppInfo.h */,
+				4284E7FE1BB98DE6006552DD /* FaceppInfo.m */,
+				4284E7FF1BB98DE6006552DD /* FaceppPerson.h */,
+				4284E8001BB98DE6006552DD /* FaceppPerson.m */,
+				4284E8011BB98DE6006552DD /* FaceppRecognition.h */,
+				4284E8021BB98DE6006552DD /* FaceppRecognition.m */,
+				4284E8031BB98DE6006552DD /* FaceppTrainer.h */,
+				4284E8041BB98DE6006552DD /* FaceppTrainer.m */,
+			);
+			path = FaceppAPISource;
+			sourceTree = "<group>";
+		};
+		4284E8051BB98DE6006552DD /* FaceppResult */ = {
+			isa = PBXGroup;
+			children = (
+				4284E8061BB98DE6006552DD /* FaceppError.h */,
+				4284E8071BB98DE6006552DD /* FaceppError.m */,
+				4284E8081BB98DE6006552DD /* FaceppResult.h */,
+				4284E8091BB98DE6006552DD /* FaceppResult.m */,
+			);
+			path = FaceppResult;
+			sourceTree = "<group>";
+		};
+		4284E80A1BB98DE6006552DD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4284E80B1BB98DE6006552DD /* UIView+AutoLayout.h */,
+				4284E80C1BB98DE6006552DD /* UIView+AutoLayout.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4284E78E1BB97A0C006552DD /* FaceTestDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4284E7BC1BB97A0C006552DD /* Build configuration list for PBXNativeTarget "FaceTestDemo" */;
+			buildPhases = (
+				4284E78B1BB97A0C006552DD /* Sources */,
+				4284E78C1BB97A0C006552DD /* Frameworks */,
+				4284E78D1BB97A0C006552DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceTestDemo;
+			productName = FaceTestDemo;
+			productReference = 4284E78F1BB97A0C006552DD /* FaceTestDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4284E7A71BB97A0C006552DD /* FaceTestDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4284E7BF1BB97A0C006552DD /* Build configuration list for PBXNativeTarget "FaceTestDemoTests" */;
+			buildPhases = (
+				4284E7A41BB97A0C006552DD /* Sources */,
+				4284E7A51BB97A0C006552DD /* Frameworks */,
+				4284E7A61BB97A0C006552DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4284E7AA1BB97A0C006552DD /* PBXTargetDependency */,
+			);
+			name = FaceTestDemoTests;
+			productName = FaceTestDemoTests;
+			productReference = 4284E7A81BB97A0C006552DD /* FaceTestDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4284E7B21BB97A0C006552DD /* FaceTestDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4284E7C21BB97A0C006552DD /* Build configuration list for PBXNativeTarget "FaceTestDemoUITests" */;
+			buildPhases = (
+				4284E7AF1BB97A0C006552DD /* Sources */,
+				4284E7B01BB97A0C006552DD /* Frameworks */,
+				4284E7B11BB97A0C006552DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4284E7B51BB97A0C006552DD /* PBXTargetDependency */,
+			);
+			name = FaceTestDemoUITests;
+			productName = FaceTestDemoUITests;
+			productReference = 4284E7B31BB97A0C006552DD /* FaceTestDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4284E7871BB97A0C006552DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Snake;
+				TargetAttributes = {
+					4284E78E1BB97A0C006552DD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 958X9LCGNW;
+					};
+					4284E7A71BB97A0C006552DD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 958X9LCGNW;
+						TestTargetID = 4284E78E1BB97A0C006552DD;
+					};
+					4284E7B21BB97A0C006552DD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 958X9LCGNW;
+						TestTargetID = 4284E78E1BB97A0C006552DD;
+					};
+				};
+			};
+			buildConfigurationList = 4284E78A1BB97A0C006552DD /* Build configuration list for PBXProject "FaceTestDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4284E7861BB97A0C006552DD;
+			productRefGroup = 4284E7901BB97A0C006552DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4284E78E1BB97A0C006552DD /* FaceTestDemo */,
+				4284E7A71BB97A0C006552DD /* FaceTestDemoTests */,
+				4284E7B21BB97A0C006552DD /* FaceTestDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4284E78D1BB97A0C006552DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4284E7A21BB97A0C006552DD /* LaunchScreen.storyboard in Resources */,
+				4284E79F1BB97A0C006552DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4284E7A61BB97A0C006552DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4284E7B11BB97A0C006552DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4284E78B1BB97A0C006552DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4284E80D1BB98DE6006552DD /* FaceppAPI.m in Sources */,
+				4284E7EB1BB980EF006552DD /* SDKsViewController.m in Sources */,
+				4284E8131BB98DE6006552DD /* FaceppInfo.m in Sources */,
+				4284E7E31BB97FCA006552DD /* CCTabBar.m in Sources */,
+				4284E8121BB98DE6006552DD /* FaceppGrouping.m in Sources */,
+				4284E7E81BB980DB006552DD /* MainViewController.m in Sources */,
+				4284E8151BB98DE6006552DD /* FaceppRecognition.m in Sources */,
+				4284E8181BB98DE6006552DD /* FaceppResult.m in Sources */,
+				4284E8101BB98DE6006552DD /* FaceppFaceset.m in Sources */,
+				4284E7E41BB97FCA006552DD /* CCTabBarButton.m in Sources */,
+				4284E7971BB97A0C006552DD /* AppDelegate.m in Sources */,
+				4284E7EE1BB98125006552DD /* COntactViewController.m in Sources */,
+				4284E80E1BB98DE6006552DD /* FaceppClient.m in Sources */,
+				4284E8171BB98DE6006552DD /* FaceppError.m in Sources */,
+				4284E8111BB98DE6006552DD /* FaceppGroup.m in Sources */,
+				4284E7E21BB97FCA006552DD /* CCAutoTabBarController.m in Sources */,
+				4284E8161BB98DE6006552DD /* FaceppTrainer.m in Sources */,
+				4284E80F1BB98DE6006552DD /* FaceppDetection.m in Sources */,
+				4284E7941BB97A0C006552DD /* main.m in Sources */,
+				4284E8191BB98DE6006552DD /* UIView+AutoLayout.m in Sources */,
+				4284E8141BB98DE6006552DD /* FaceppPerson.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4284E7A41BB97A0C006552DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4284E7AD1BB97A0C006552DD /* FaceTestDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4284E7AF1BB97A0C006552DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4284E7B81BB97A0C006552DD /* FaceTestDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4284E7AA1BB97A0C006552DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4284E78E1BB97A0C006552DD /* FaceTestDemo */;
+			targetProxy = 4284E7A91BB97A0C006552DD /* PBXContainerItemProxy */;
+		};
+		4284E7B51BB97A0C006552DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4284E78E1BB97A0C006552DD /* FaceTestDemo */;
+			targetProxy = 4284E7B41BB97A0C006552DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4284E7A01BB97A0C006552DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4284E7A11BB97A0C006552DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4284E7BA1BB97A0C006552DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4284E7BB1BB97A0C006552DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4284E7BD1BB97A0C006552DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FaceTestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snake.FaceTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4284E7BE1BB97A0C006552DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FaceTestDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snake.FaceTestDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4284E7C01BB97A0C006552DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FaceTestDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snake.FaceTestDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceTestDemo.app/FaceTestDemo";
+			};
+			name = Debug;
+		};
+		4284E7C11BB97A0C006552DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FaceTestDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snake.FaceTestDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceTestDemo.app/FaceTestDemo";
+			};
+			name = Release;
+		};
+		4284E7C31BB97A0C006552DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FaceTestDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snake.FaceTestDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FaceTestDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4284E7C41BB97A0C006552DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FaceTestDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Snake.FaceTestDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FaceTestDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4284E78A1BB97A0C006552DD /* Build configuration list for PBXProject "FaceTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4284E7BA1BB97A0C006552DD /* Debug */,
+				4284E7BB1BB97A0C006552DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4284E7BC1BB97A0C006552DD /* Build configuration list for PBXNativeTarget "FaceTestDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4284E7BD1BB97A0C006552DD /* Debug */,
+				4284E7BE1BB97A0C006552DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4284E7BF1BB97A0C006552DD /* Build configuration list for PBXNativeTarget "FaceTestDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4284E7C01BB97A0C006552DD /* Debug */,
+				4284E7C11BB97A0C006552DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4284E7C21BB97A0C006552DD /* Build configuration list for PBXNativeTarget "FaceTestDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4284E7C31BB97A0C006552DD /* Debug */,
+				4284E7C41BB97A0C006552DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4284E7871BB97A0C006552DD /* Project object */;
+}
