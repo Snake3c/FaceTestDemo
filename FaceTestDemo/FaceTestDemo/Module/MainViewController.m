@@ -10,7 +10,7 @@
 #import "FaceppAPI.h"
 #import "UIView+AutoLayout.h"
 #define blue [UIColor colorWithRed:19/255.0 green:47/255.0 blue:133/255.0 alpha:1]
-
+#define kMaxLength 2000000
 
 @interface MainViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic ,weak) UIImageView *imageVIew;
@@ -68,6 +68,7 @@
     //label
     UILabel *label = [[UILabel alloc]initForAutoLayout];
     label.textAlignment = NSTextAlignmentCenter;
+    label.backgroundColor = [UIColor whiteColor];
     label.numberOfLines = 0;
     self.label = label;
     [self.view addSubview:self.label];
@@ -116,26 +117,43 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
+    NSData *dataOrigin = UIImagePNGRepresentation(image);
+    
+    //性能优化 减少数据流量 和内存压力
+
+    CGFloat datalength = dataOrigin.length;
+    CGFloat sacleK = dataOrigin.length > kMaxLength? kMaxLength/datalength :1;
+    CGFloat sacle = image.size.width / image.size.height * sacleK;
+    image = [self reSizeImage:image toSize:CGSizeMake( image.size.width * sacle, image.size.height * sacle)];
     
     image = [self fixOrientation:image];
     
     //开始检测
     NSData *data = UIImageJPEGRepresentation(image, 0.5);
+   
     
     //detection/detect	检测一张照片中的人脸信息（脸部位置、年龄、种族、性别等等）
     FaceppResult *result = [[FaceppAPI detection] detectWithURL:nil orImageData:data];
     
     //获取性别,年龄
-    
     NSDictionary *attributeDict = result.content[@"face"][0][@"attribute"];
+
     NSString *ageValue = attributeDict[@"age"][@"value"];
     NSString *sexValue = [attributeDict[@"gender"][@"value"] isEqualToString:@"Male"] ? @"男性" : @"女性";
-    self.label.text = [NSString stringWithFormat:@"年龄:%@  是一位:%@",ageValue ,sexValue];
+    CGFloat small = [attributeDict[@"smiling"][@"value"] floatValue];
+    NSString *smallValue = small > 30.000? @"开朗":@"稳重";
+    
+    self.label.text = [NSString stringWithFormat:@"年龄:%@  是一位%@的%@",ageValue ,smallValue ,sexValue];
     
     UIGraphicsBeginImageContextWithOptions( image.size, NO, 0);
     [image drawAtPoint:CGPointZero];
     UIGraphicsEndImageContext();
     
+    // 删除原有约束
+    [self.imageVIew autoRemoveConstraintsAffectingView];
+    
+    // 设置居中
+    [self.imageVIew autoCenterInSuperview];
     CGFloat scale = image.size.width / [UIScreen mainScreen].bounds.size.width;
     
     
@@ -147,8 +165,15 @@
     
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
+#pragma mark 降低图片的大小
 
-
+- (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize{
+    UIGraphicsBeginImageContext(CGSizeMake(reSize.width, reSize.height));
+    [image drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return reSizeImage;
+}
 #pragma mark 方向校正
 
 
